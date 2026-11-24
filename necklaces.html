@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Kolyeler | Luna Bijuteri</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!-- Sidebar -->
+<aside id="sidebar" class="sidebar">
+  <button class="close-btn" id="closeSidebar">×</button>
+  <h3>Kategoriler</h3>
+  <ul>
+    <li><a href="index.html">Anasayfa</a></li>
+    <li><a href="rings.html">Yüzükler</a></li>
+    <li><a href="earrings.html">Küpeler</a></li>
+    <li><a href="bracelets.html">Bileklikler</a></li>
+    <li><a href="necklaces.html">Kolyeler</a></li>
+  </ul>
+</aside>
+
+<!-- Header -->
+<header class="navbar">
+  <div class="left">
+    <button id="menuBtn" class="menu-icon" aria-label="Menü">☰</button>
+    <a href="index.html" class="logo">Luna Bijuteri</a>
+  </div>
+
+  <div class="right">
+    <input id="searchInput" class="search-bar" placeholder="Ürün ara..." />
+    <button id="cartBtn" class="cart-icon" aria-label="Sepet">🛒 <span id="cartCount">0</span></button>
+  </div>
+</header>
+
+<section class="category-header">
+  <h1>Kolyeler</h1>
+  <p>Seçkin kolyeler koleksiyonumuz.</p>
+</section>
+<section class="filter-section">
+  <h2>Filtrele 🔍</h2>
+  <select id="priceFilter"><option value="">Fiyat</option><option value="low-high">Düşükten Yükseğe</option><option value="high-low">Yüksekten Düşüğe</option></select>
+  <select id="materialFilter"><option value="">Malzeme</option><option value="altin">Altın</option><option value="gumus">Gümüş</option></select>
+  <select id="colorFilter"><option value="">Renk</option><option value="altın">Altın</option><option value="gümüş">Gümüş</option></select>
+</section>
+<section class="products">
+  <div class="product-grid">
+
+      <a href="product-necklace1.html" class="product-card" data-id="neck-001" data-price="420" data-material="gumus" data-color="gümüş">
+        <img src="images/neck1.jpg" alt="Gümüş Minimal Kolye" />
+        <h3>Gümüş Minimal Kolye</h3>
+        <p class="price">₺420</p>
+        <button class="add-cart-btn" data-id="neck-001" data-name="Gümüş Minimal Kolye" data-price="420" data-img="images/neck1.jpg">Sepete Ekle</button>
+      </a>
+
+      <a href="product-necklace2.html" class="product-card" data-id="neck-002" data-price="520" data-material="altin" data-color="altın">
+        <img src="images/neck2.jpg" alt="Altın Uzun Kolye" />
+        <h3>Altın Uzun Kolye</h3>
+        <p class="price">₺520</p>
+        <button class="add-cart-btn" data-id="neck-002" data-name="Altın Uzun Kolye" data-price="520" data-img="images/neck2.jpg">Sepete Ekle</button>
+      </a>
+
+      <a href="product-necklace3.html" class="product-card" data-id="neck-003" data-price="340" data-material="gumus" data-color="pembe">
+        <img src="images/neck3.jpg" alt="Taşlı Kısa Kolye" />
+        <h3>Taşlı Kısa Kolye</h3>
+        <p class="price">₺340</p>
+        <button class="add-cart-btn" data-id="neck-003" data-name="Taşlı Kısa Kolye" data-price="340" data-img="images/neck3.jpg">Sepete Ekle</button>
+      </a>
+
+  </div>
+</section>
+<footer><p>© 2025 Luna Bijuteri</p></footer>
+<!-- Sepet Paneli -->
+<div id="cartPanel" class="cart-panel" aria-hidden="true">
+  <div class="cart-header">
+    <h3>Sepetim</h3>
+    <button id="closeCart" class="close-btn">×</button>
+  </div>
+  <div id="cartItemsContainer" class="cart-items"></div>
+
+  <div class="cart-bottom">
+    <div class="cart-total">Toplam: <strong id="cartTotal">₺0.00</strong></div>
+    <button id="checkoutBtn" class="payBtn">Ödeme Yap</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

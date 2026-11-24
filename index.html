@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Luna Bijuteri — Ana Sayfa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Sidebar (kayan kategori menüsü) -->
+  <aside id="sidebar" class="sidebar">
+    <button class="close-btn" id="closeSidebar">×</button>
+    <h3>Kategoriler</h3>
+    <ul>
+      <li><a href="index.html">Anasayfa</a></li>
+      <li><a href="rings.html">Yüzükler</a></li>
+      <li><a href="earrings.html">Küpeler</a></li>
+      <li><a href="bracelets.html">Bileklikler</a></li>
+      <li><a href="necklaces.html">Kolyeler</a></li>
+    </ul>
+  </aside>
+
+  <!-- Header -->
+  <!-- Header -->
+<header class="navbar">
+  <div class="left">
+    <button id="menuBtn" class="menu-icon" aria-label="Menü">☰</button>
+    <a href="index.html" class="logo">Luna Bijuteri</a>
+  </div>
+
+  <div class="right">
+    <input id="searchInput" class="search-bar" placeholder="Ürün ara..." />
+    <button id="cartBtn" class="cart-icon" aria-label="Sepet">🛒 <span id="cartCount">0</span></button>
+  </div>
+</header>
+
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Parıltını Keşfet ✨</h1>
+      <p>Modern, zarif ve her tarza uygun takılar — günlük kullanıma ve özel anlara.</p>
+      <a href="#products" class="btn">Keşfet</a>
+    </div>
+  </section>
+
+  <!-- Kampanyalar -->
+  <section class="campaigns">
+    <div class="campaign-card">
+      <h3>🎁 Ücretsiz Kargo</h3>
+      <p>₺250 ve üzeri alışverişlerde ücretsiz kargo</p>
+    </div>
+    <div class="campaign-card">
+      <h3>✨ Yeni Koleksiyon</h3>
+      <p>2025 İlkbahar - Zarif tasarımlar</p>
+    </div>
+    <div class="campaign-card">
+      <h3>⭐ Popüler</h3>
+      <p>Haftanın çok satan ürünleri</p>
+    </div>
+  </section>
+
+  <!-- Ürünler -->
+  <section id="products" class="products">
+    <h2>Öne Çıkan Ürünler</h2>
+
+    <div class="product-grid" id="productGrid">
+      <!-- Ürün kartları (linkli, product sayfasına gider) -->
+      <a href="rings.html" class="product-card" data-id="ring-001" data-price="350" data-material="Altın" data-color="Altın">
+        <img src="images/ring1.jpg" alt="Altın Kalpli Yüzük">
+        <h3>Altın Kalpli Yüzük</h3>
+        <p class="price">₺350</p>
+        <button class="add-cart-btn" data-id="ring-001" data-name="Altın Kalpli Yüzük" data-price="350" data-img="images/ring1.jpg">Sepete Ekle</button>
+      </a>
+
+      <a href="rings.html" class="product-card" data-id="ring-002" data-price="420" data-material="Gümüş" data-color="Gümüş">
+        <img src="images/ring2.jpg" alt="Gümüş Taşlı Yüzük">
+        <h3>Gümüş Taşlı Yüzük</h3>
+        <p class="price">₺420</p>
+        <button class="add-cart-btn" data-id="ring-002" data-name="Gümüş Taşlı Yüzük" data-price="420" data-img="images/ring2.jpg">Sepete Ekle</button>
+      </a>
+
+      <a href="earrings.html" class="product-card" data-id="ear-001" data-price="179" data-material="Gümüş" data-color="Gümüş">
+        <img src="images/ear1.jpg" alt="Pırlanta Küpe">
+        <h3>Pırlanta Küpe</h3>
+        <p class="price">₺179</p>
+        <button class="add-cart-btn" data-id="ear-001" data-name="Pırlanta Küpe" data-price="179" data-img="images/ear1.jpg">Sepete Ekle</button>
+      </a>
+
+      <a href="necklaces.html" class="product-card" data-id="neck-001" data-price="420" data-material="Gümüş" data-color="Gümüş">
+        <img src="images/neck1.jpg" alt="Gümüş Minimal Kolye">
+        <h3>Gümüş Minimal Kolye</h3>
+        <p class="price">₺420</p>
+        <button class="add-cart-btn" data-id="neck-001" data-name="Gümüş Minimal Kolye" data-price="420" data-img="images/neck1.jpg">Sepete Ekle</button>
+      </a>
+
+      <a href="bracelets.html" class="product-card" data-id="brace-001" data-price="199" data-material="Altın" data-color="Altın">
+        <img src="images/brace1.jpg" alt="Taşlı Bileklik">
+        <h3>Taşlı Bileklik</h3>
+        <p class="price">₺199</p>
+        <button class="add-cart-btn" data-id="brace-001" data-name="Taşlı Bileklik" data-price="199" data-img="images/brace1.jpg">Sepete Ekle</button>
+      </a>
+    </div>
+  </section>
+
+  <!-- Hakkımızda -->
+  <section class="about">
+    <h2>Hakkımızda</h2>
+    <p>Luna Bijuteri, el işçiliği ve özenli tasarım anlayışıyla 2025'te kuruldu. Her parça özenle seçilir ve paketlenir.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Luna Bijuteri | Tüm hakları saklıdır.</p>
+  </footer>
+
+  <!-- Sepet Paneli (sağdan kayan) -->
+  <div id="cartPanel" class="cart-panel" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Sepetim</h3>
+      <button id="closeCart" class="close-btn">×</button>
+    </div>
+    <div id="cartItemsContainer" class="cart-items"></div>
+
+    <div class="cart-bottom">
+      <div class="cart-total">Toplam: <strong id="cartTotal">₺0.00</strong></div>
+      <button id="checkoutBtn" class="payBtn">Ödeme Yap</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+<!-- Lightbox Modal -->
+<div id="lightboxModal" class="lightbox-modal" aria-hidden="true">
+  <div class="lightbox-inner">
+    <button id="lightboxClose" class="close-btn" aria-label="Kapat">×</button>
+    <img id="lightboxImg" src="" alt="Büyütülmüş görsel" />
+  </div>
+</div>
+</body>
+</html>

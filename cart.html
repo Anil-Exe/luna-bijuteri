@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sepet | Luna Bijuteri</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Sidebar -->
+<aside id="sidebar" class="sidebar">
+  <button class="close-btn" id="closeSidebar">×</button>
+  <h3>Kategoriler</h3>
+  <ul>
+    <li><a href="index.html">Anasayfa</a></li>
+    <li><a href="rings.html">Yüzükler</a></li>
+    <li><a href="earrings.html">Küpeler</a></li>
+    <li><a href="bracelets.html">Bileklikler</a></li>
+    <li><a href="necklaces.html">Kolyeler</a></li>
+  </ul>
+</aside>
+
+  <!-- Header -->
+<header class="navbar">
+  <div class="left">
+    <button id="menuBtn" class="menu-icon" aria-label="Menü">☰</button>
+    <a href="index.html" class="logo">Luna Bijuteri</a>
+  </div>
+
+  <div class="right">
+    <input id="searchInput" class="search-bar" placeholder="Ürün ara..." />
+    <button id="cartBtn" class="cart-icon" aria-label="Sepet">🛒 <span id="cartCount">0</span></button>
+  </div>
+</header>
+
+
+  <main class="cart-page">
+    <ul id="cartItems"></ul>
+    <div class="cart-summary">
+      <div class="total">Toplam: ₺<span id="totalPrice">0</span></div>
+      <button class="btn payBtn">Ödeme Yap</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+
+<!-- Lightbox Modal -->
+<div id="lightboxModal" class="lightbox-modal" aria-hidden="true">
+  <div class="lightbox-inner">
+    <button id="lightboxClose" class="close-btn" aria-label="Kapat">×</button>
+    <img id="lightboxImg" src="" alt="Büyütülmüş görsel" />
+  </div>
+</div>
+</body>
+</html>
+<!-- Sepet Paneli -->
+<div id="cartPanel" class="cart-panel" aria-hidden="true">
+  <div class="cart-header">
+    <h3>Sepetim</h3>
+    <button id="closeCart" class="close-btn">×</button>
+  </div>
+  <div id="cartItemsContainer" class="cart-items"></div>
+
+  <div class="cart-bottom">
+    <div class="cart-total">Toplam: <strong id="cartTotal">₺0.00</strong></div>
+    <button id="checkoutBtn" class="payBtn">Ödeme Yap</button>
+  </div>
+</div>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Altın Kalpli Yüzük — Luna Bijuteri</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!-- Sidebar -->
+<aside id="sidebar" class="sidebar">
+  <button class="close-btn" id="closeSidebar">×</button>
+  <h3>Kategoriler</h3>
+  <ul>
+    <li><a href="index.html">Anasayfa</a></li>
+    <li><a href="rings.html">Yüzükler</a></li>
+    <li><a href="earrings.html">Küpeler</a></li>
+    <li><a href="bracelets.html">Bileklikler</a></li>
+    <li><a href="necklaces.html">Kolyeler</a></li>
+  </ul>
+</aside>
+
+<!-- Header -->
+<header class="navbar">
+  <div class="left">
+    <button id="menuBtn" class="menu-icon" aria-label="Menü">☰</button>
+    <a href="index.html" class="logo">Luna Bijuteri</a>
+  </div>
+
+  <div class="right">
+    <input id="searchInput" class="search-bar" placeholder="Ürün ara..." />
+    <button id="cartBtn" class="cart-icon" aria-label="Sepet">🛒 <span id="cartCount">0</span></button>
+  </div>
+</header>
+
+<main class="product-detail">
+  <div class="left-col">
+    <img src="images/ring1.jpg" data-large="images/ring1.jpg" class="zoomable" alt="Altın Kalpli Yüzük" />
+  </div>
+  <div class="right-col">
+    <h1>Altın Kalpli Yüzük</h1>
+    <p class="price">₺350</p>
+    <div class="meta">Malzeme: <strong>altin</strong> • Renk: <strong>altın</strong></div>
+    <div class="buy-row">
+      <button class="btn addCart" data-id="ring-001" data-name="Altın Kalpli Yüzük" data-price="350" data-img="images/ring1.jpg">Sepete Ekle</button>
+    </div>
+  </div>
+
+  <section class="prod-section"><h3>Ürün Hakkında</h3><p>Altın Kalpli Yüzük adında şık bir tasarım. Günlük kullanım ve özel günler için uygundur.</p></section>
+  <section class="prod-section"><h3>Ürün Özellikleri</h3><ul><li>El işçiliği</li><li>Hipoalerjenik</li><li>Malzeme: altin</li></ul></section>
+  <section class="prod-section"><h3>Değerlendirmeler</h3><div class="review"><strong>Elif K.</strong> — ⭐⭐⭐⭐☆<br/>Çok zarif, paketlemesi özenliydi.</div><div class="review"><strong>Ayşe T.</strong> — ⭐⭐⭐⭐⭐<br/>Hediye aldım, çok beğendi.</div></section>
+
+</main>
+
+<section class="prod-section similar-products similar-wrap">
+  <h3>Benzer Ürünler</h3>
+  <div class="similar-arrow left">◀</div>
+  <div class="similar-row">
+    <a class="similar-card" href="rings.html"><img src="images/ring2.jpg" alt=""><div>Benzer 1<br>₺420</div></a>
+    <a class="similar-card" href="earrings.html"><img src="images/ear1.jpg" alt=""><div>Benzer 2<br>₺199</div></a>
+    <a class="similar-card" href="bracelets.html"><img src="images/brace1.jpg" alt=""><div>Benzer 3<br>₺199</div></a>
+  </div>
+  <div class="similar-arrow right">▶</div>
+</section>
+
+<footer><p>© 2025 Luna Bijuteri</p></footer>
+<!-- Sepet Paneli -->
+<div id="cartPanel" class="cart-panel" aria-hidden="true">
+  <div class="cart-header">
+    <h3>Sepetim</h3>
+    <button id="closeCart" class="close-btn">×</button>
+  </div>
+  <div id="cartItemsContainer" class="cart-items"></div>
+
+  <div class="cart-bottom">
+    <div class="cart-total">Toplam: <strong id="cartTotal">₺0.00</strong></div>
+    <button id="checkoutBtn" class="payBtn">Ödeme Yap</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
