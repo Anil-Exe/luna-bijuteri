@@ -12,6 +12,10 @@
 
 HTML, CSS ve JavaScript ile hazırlanmış ürün kataloğu ve alışveriş sepeti arayüzü.
 
+## Proje bağlamı
+
+Üniversite eğitimi sırasında hazırlanan bir ön yüz projesidir. Ürün listeleme, detay sayfaları ve tarayıcıda kalıcı sepet davranışını HTML, CSS ve JavaScript ile uygulamak amacıyla geliştirilmiştir.
+
 ## Özellikler
 
 - Kolye, bileklik, küpe ve yüzük kategorileri
@@ -29,6 +33,6 @@ python -m http.server 8000 --bind 127.0.0.1
 
 Ardından `http://127.0.0.1:8000` adresini açın.
 
-Bu proje bir mağaza arayüzü demosudur. Gerçek ödeme, sipariş işleme veya sunucu tarafı müşteri/veritabanı sistemi içermez. Kart veya müşteri bilgisi toplamak için kullanılmamalıdır.
+Bu proje bir mağaza arayüzü demosudur. Gerçek ödeme, sipariş işleme veya sunucu tarafı müşteri/veritabanı sistemi içermez. Ödeme ve gerçek müşteri verisi işleme bu ön yüz demosunun kapsamı dışındadır.
 
 Sepet sayfasındaki marka adı diğer sayfalarla tutarlı hâle getirildi. Görsellerin dosya metaverileri paylaşım kopyasından temizlendi. Tarayıcıda uçtan uca etkileşim testi bu incelemede yapılmadı.
